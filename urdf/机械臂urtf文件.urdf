@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="机械臂urtf文件">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.036917 -0.00036325 0.04838"
+        rpy="0 0 0" />
+      <mass
+        value="0.36716" />
+      <inertia
+        ixx="0.0003013"
+        ixy="-7.7045E-08"
+        ixz="-7.1751E-07"
+        iyy="0.00057269"
+        iyz="-2.5073E-10"
+        izz="0.00065607" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://机械臂urtf文件/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://机械臂urtf文件/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="0.00543280532846522 0.0106019797335686 -0.0379773804901715"
+        rpy="0 0 0" />
+      <mass
+        value="0.260505535411892" />
+      <inertia
+        ixx="0.000261369018131478"
+        ixy="-9.25066866481221E-05"
+        ixz="8.99302555041308E-06"
+        iyy="0.000213681466672324"
+        iyz="2.89891648161378E-05"
+        izz="0.000312627907076488" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://机械臂urtf文件/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://机械臂urtf文件/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="-0.017275 0.0025 -0.00036912"
+      rpy="1.5708 0.67306 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="0.0271988351019737 -0.0423817535134543 -0.0187082636892856"
+        rpy="0 0 0" />
+      <mass
+        value="0.382606017562664" />
+      <inertia
+        ixx="0.00124940765774743"
+        ixy="0.000672824028742632"
+        ixz="-2.63404156232444E-05"
+        iyy="0.000632777608911537"
+        iyz="4.10400762198352E-05"
+        izz="0.00179969483689529" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://机械臂urtf文件/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://机械臂urtf文件/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="-0.0036085 0.046448 -0.054"
+      rpy="1.5708 0.66354 1.0131" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="-0.0225317846811484 -0.000409675074721949 0.00376894415780007"
+        rpy="0 0 0" />
+      <mass
+        value="0.148555276850685" />
+      <inertia
+        ixx="0.000119969400028678"
+        ixy="-5.80926487120232E-07"
+        ixz="3.83827450053871E-06"
+        iyy="0.000101456664035352"
+        iyz="-7.7210680906673E-08"
+        izz="0.000100615979606371" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://机械臂urtf文件/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://机械臂urtf文件/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="0.086419 -0.13465 0"
+      rpy="0.060117 1.5708 0" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="0.00198095392174447 0.000625065115480522 0.0885076933069707"
+        rpy="0 0 0" />
+      <mass
+        value="0.0991128739481142" />
+      <inertia
+        ixx="0.000101727596688212"
+        ixy="-4.59310071480919E-07"
+        ixz="6.30031751147386E-06"
+        iyy="0.000111838941038161"
+        iyz="6.92970981708923E-07"
+        izz="5.25753483509745E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://机械臂urtf文件/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://机械臂urtf文件/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="revolute">
+    <origin
+      xyz="-0.031744 0.011563 0.018634"
+      rpy="0.53673 0.60447 2.3791" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link5">
+    <inertial>
+      <origin
+        xyz="-0.0269274195204991 1.30451205393456E-15 -0.00274999999999892"
+        rpy="0 0 0" />
+      <mass
+        value="0.022576161236906" />
+      <inertia
+        ixx="1.04980491779765E-05"
+        ixy="-8.25857123572943E-21"
+        ixz="2.96461531539005E-21"
+        iyy="1.86504293698969E-05"
+        iyz="8.470329472543E-21"
+        izz="1.62978056520841E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://机械臂urtf文件/meshes/link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://机械臂urtf文件/meshes/link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="revolute">
+    <origin
+      xyz="0 0 0.14412"
+      rpy="1.5708 1.0002 1.5708" />
+    <parent
+      link="link4" />
+    <child
+      link="link5" />
+    <axis
+      xyz="1.2419E-05 1.9349E-05 -1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+</robot>
